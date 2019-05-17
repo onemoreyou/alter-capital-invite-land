@@ -1,0 +1,280 @@
+body {
+	padding: 0; margin: 0; background: #fafafa;
+	font: normal 14px Segoe UI, Open Sans, San Francisco, PT Sans Caption, Verdana, Tahoma, sans-serif;;
+}
+
+#done, #done h1, #done h2, #done p { display: block; text-align: center; margin: 0 auto; padding: 0; }
+#done { padding: 35px 20px 15px 20px;  }
+#done h1, #done h2 { color: #272; margin-bottom: 1em; }
+#done h1 { font-size: 2em;  }
+#done h2 { font-size: 1.5em; font-weight: normal; max-width: 500px; }
+
+#offers { text-align: center; display: block; padding: 20px; margin: 0 auto; max-width: 1300px;}
+#offers li { display: inline-block; max-width: 350px; background: #fff; margin: 20px; padding: 0; box-shadow: 0 1px 3px rgba(0, 0, 0, .28);transition: box-shadow 150ms linear; }
+#offers li:hover { box-shadow: 0 3px 9px rgba(0, 0, 0, .28) }
+#offers li img { width: 100%; max-width: 100%; }
+.offer-name { font-size: 1.3em; text-align: center; padding: 15px; margin: 0 auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.offer-button { padding: 0 0 15px 0; text-align: center; }
+.offer-button a { display: inline-block; padding: 10px 25px; text-decoration: none; color: #fff; background: #df003b; text-shadow: 0 1px 1px rgba(0, 0, 0, .1); transition: all .2s ease-in-out}
+.offer-button a:hover { background: #474747; }
+.offer-info { padding: 15px; border-top: solid 1px #eee; opacity: 0.5; }
+#offers li:hover .offer-info { opacity: 1; }
+.offer-info span { padding: 3px 6px 3px 25px; background: url('image/likes.png') left center no-repeat; }
+.order { background-image: url('image/order.png') !important; }
+
+@media (max-width: 450px) {
+	#offers { max-width: 400px; margin: 0 auto; box-sizing: border-box; }
+	#offers li { display: block; max-width: 100%; margin: 25px 0; }
+	body { font-size: 13px; }
+}
+
+/* Countries */
+.ad { background-image: url('image/ad.png') !important; }
+.bw { background-image: url('image/bw.png') !important; }
+.eh { background-image: url('image/eh.png') !important; }
+.hm { background-image: url('image/hm.png') !important; }
+.lk { background-image: url('image/lk.png') !important; }
+.nf { background-image: url('image/nf.png') !important; }
+.sc { background-image: url('image/sc.png') !important; }
+.tw { background-image: url('image/tw.png') !important; }
+.ae { background-image: url('image/ae.png') !important; }
+.by { background-image: url('image/by.png') !important; }
+.england { background-image: url('image/england.png') !important; }
+.hn { background-image: url('image/hn.png') !important; }
+.lr { background-image: url('image/lr.png') !important; }
+.ng { background-image: url('image/ng.png') !important; }
+.scotland { background-image: url('image/scotland.png') !important; }
+.tz { background-image: url('image/tz.png') !important; }
+.af { background-image: url('image/af.png') !important; }
+.bz { background-image: url('image/bz.png') !important; }
+.er { background-image: url('image/er.png') !important; }
+.hr { background-image: url('image/hr.png') !important; }
+.ls { background-image: url('image/ls.png') !important; }
+.ni { background-image: url('image/ni.png') !important; }
+.sd { background-image: url('image/sd.png') !important; }
+.ua { background-image: url('image/ua.png') !important; }
+.ag { background-image: url('image/ag.png') !important; }
+.ca { background-image: url('image/ca.png') !important; }
+.es { background-image: url('image/es.png') !important; }
+.ht { background-image: url('image/ht.png') !important; }
+.lt { background-image: url('image/lt.png') !important; }
+.nl { background-image: url('image/nl.png') !important; }
+.se { background-image: url('image/se.png') !important; }
+.ug { background-image: url('image/ug.png') !important; }
+.ai { background-image: url('image/ai.png') !important; }
+.catalonia { background-image: url('image/catalonia.png') !important; }
+.et { background-image: url('image/et.png') !important; }
+.hu { background-image: url('image/hu.png') !important; }
+.lu { background-image: url('image/lu.png') !important; }
+.no { background-image: url('image/no.png') !important; }
+.sg { background-image: url('image/sg.png') !important; }
+.uk { background-image: url('image/uk.png') !important; }
+.al { background-image: url('image/al.png') !important; }
+.cc { background-image: url('image/cc.png') !important; }
+.europeanunion { background-image: url('image/europeanunion.png') !important; }
+.id { background-image: url('image/id.png') !important; }
+.lv { background-image: url('image/lv.png') !important; }
+.np { background-image: url('image/np.png') !important; }
+.sh { background-image: url('image/sh.png') !important; }
+.um { background-image: url('image/um.png') !important; }
+.am { background-image: url('image/am.png') !important; }
+.cd { background-image: url('image/cd.png') !important; }
+.fam { background-image: url('image/fam.png') !important; }
+.ie { background-image: url('image/ie.png') !important; }
+.ly { background-image: url('image/ly.png') !important; }
+.nr { background-image: url('image/nr.png') !important; }
+.si { background-image: url('image/si.png') !important; }
+.us { background-image: url('image/us.png') !important; }
+.an { background-image: url('image/an.png') !important; }
+.cf { background-image: url('image/cf.png') !important; }
+.fi { background-image: url('image/fi.png') !important; }
+.il { background-image: url('image/il.png') !important; }
+.ma { background-image: url('image/ma.png') !important; }
+.nu { background-image: url('image/nu.png') !important; }
+.sj { background-image: url('image/sj.png') !important; }
+.uy { background-image: url('image/uy.png') !important; }
+.ao { background-image: url('image/ao.png') !important; }
+.cg { background-image: url('image/cg.png') !important; }
+.fj { background-image: url('image/fj.png') !important; }
+.in { background-image: url('image/in.png') !important; }
+.mc { background-image: url('image/mc.png') !important; }
+.nz { background-image: url('image/nz.png') !important; }
+.sk { background-image: url('image/sk.png') !important; }
+.uz { background-image: url('image/uz.png') !important; }
+.ar { background-image: url('image/ar.png') !important; }
+.ch { background-image: url('image/ch.png') !important; }
+.fk { background-image: url('image/fk.png') !important; }
+.io { background-image: url('image/io.png') !important; }
+.md { background-image: url('image/md.png') !important; }
+.om { background-image: url('image/om.png') !important; }
+.sl { background-image: url('image/sl.png') !important; }
+.va { background-image: url('image/va.png') !important; }
+.as { background-image: url('image/as.png') !important; }
+.ci { background-image: url('image/ci.png') !important; }
+.fm { background-image: url('image/fm.png') !important; }
+.iq { background-image: url('image/iq.png') !important; }
+.me { background-image: url('image/me.png') !important; }
+.pa { background-image: url('image/pa.png') !important; }
+.sm { background-image: url('image/sm.png') !important; }
+.vc { background-image: url('image/vc.png') !important; }
+.at { background-image: url('image/at.png') !important; }
+.ck { background-image: url('image/ck.png') !important; }
+.fo { background-image: url('image/fo.png') !important; }
+.ir { background-image: url('image/ir.png') !important; }
+.mg { background-image: url('image/mg.png') !important; }
+.pe { background-image: url('image/pe.png') !important; }
+.sn { background-image: url('image/sn.png') !important; }
+.ve { background-image: url('image/ve.png') !important; }
+.au { background-image: url('image/au.png') !important; }
+.cl { background-image: url('image/cl.png') !important; }
+.fr { background-image: url('image/fr.png') !important; }
+.is { background-image: url('image/is.png') !important; }
+.mh { background-image: url('image/mh.png') !important; }
+.pf { background-image: url('image/pf.png') !important; }
+.so { background-image: url('image/so.png') !important; }
+.vg { background-image: url('image/vg.png') !important; }
+.aw { background-image: url('image/aw.png') !important; }
+.cm { background-image: url('image/cm.png') !important; }
+.ga { background-image: url('image/ga.png') !important; }
+.it { background-image: url('image/it.png') !important; }
+.mk { background-image: url('image/mk.png') !important; }
+.pg { background-image: url('image/pg.png') !important; }
+.sr { background-image: url('image/sr.png') !important; }
+.vi { background-image: url('image/vi.png') !important; }
+.ax { background-image: url('image/ax.png') !important; }
+.cn { background-image: url('image/cn.png') !important; }
+.gb { background-image: url('image/gb.png') !important; }
+.jm { background-image: url('image/jm.png') !important; }
+.ml { background-image: url('image/ml.png') !important; }
+.ph { background-image: url('image/ph.png') !important; }
+.st { background-image: url('image/st.png') !important; }
+.vn { background-image: url('image/vn.png') !important; }
+.az { background-image: url('image/az.png') !important; }
+.co { background-image: url('image/co.png') !important; }
+.gd { background-image: url('image/gd.png') !important; }
+.jo { background-image: url('image/jo.png') !important; }
+.mm { background-image: url('image/mm.png') !important; }
+.pk { background-image: url('image/pk.png') !important; }
+.sv { background-image: url('image/sv.png') !important; }
+.vu { background-image: url('image/vu.png') !important; }
+.ba { background-image: url('image/ba.png') !important; }
+.cr { background-image: url('image/cr.png') !important; }
+.ge { background-image: url('image/ge.png') !important; }
+.jp { background-image: url('image/jp.png') !important; }
+.mn { background-image: url('image/mn.png') !important; }
+.pl { background-image: url('image/pl.png') !important; }
+.sy { background-image: url('image/sy.png') !important; }
+.wales { background-image: url('image/wales.png') !important; }
+.bb { background-image: url('image/bb.png') !important; }
+.cs { background-image: url('image/cs.png') !important; }
+.gf { background-image: url('image/gf.png') !important; }
+.ke { background-image: url('image/ke.png') !important; }
+.mo { background-image: url('image/mo.png') !important; }
+.pm { background-image: url('image/pm.png') !important; }
+.sz { background-image: url('image/sz.png') !important; }
+.wf { background-image: url('image/wf.png') !important; }
+.bd { background-image: url('image/bd.png') !important; }
+.cu { background-image: url('image/cu.png') !important; }
+.gh { background-image: url('image/gh.png') !important; }
+.kg { background-image: url('image/kg.png') !important; }
+.mp { background-image: url('image/mp.png') !important; }
+.pn { background-image: url('image/pn.png') !important; }
+.tc { background-image: url('image/tc.png') !important; }
+.ws { background-image: url('image/ws.png') !important; }
+.be { background-image: url('image/be.png') !important; }
+.cv { background-image: url('image/cv.png') !important; }
+.gi { background-image: url('image/gi.png') !important; }
+.kh { background-image: url('image/kh.png') !important; }
+.mq { background-image: url('image/mq.png') !important; }
+.pr { background-image: url('image/pr.png') !important; }
+.td { background-image: url('image/td.png') !important; }
+.ye { background-image: url('image/ye.png') !important; }
+.bf { background-image: url('image/bf.png') !important; }
+.cx { background-image: url('image/cx.png') !important; }
+.gl { background-image: url('image/gl.png') !important; }
+.ki { background-image: url('image/ki.png') !important; }
+.mr { background-image: url('image/mr.png') !important; }
+.ps { background-image: url('image/ps.png') !important; }
+.tf { background-image: url('image/tf.png') !important; }
+.yt { background-image: url('image/yt.png') !important; }
+.bg { background-image: url('image/bg.png') !important; }
+.cy { background-image: url('image/cy.png') !important; }
+.gm { background-image: url('image/gm.png') !important; }
+.km { background-image: url('image/km.png') !important; }
+.ms { background-image: url('image/ms.png') !important; }
+.pt { background-image: url('image/pt.png') !important; }
+.tg { background-image: url('image/tg.png') !important; }
+.za { background-image: url('image/za.png') !important; }
+.bh { background-image: url('image/bh.png') !important; }
+.cz { background-image: url('image/cz.png') !important; }
+.gn { background-image: url('image/gn.png') !important; }
+.kn { background-image: url('image/kn.png') !important; }
+.mt { background-image: url('image/mt.png') !important; }
+.pw { background-image: url('image/pw.png') !important; }
+.th { background-image: url('image/th.png') !important; }
+.zm { background-image: url('image/zm.png') !important; }
+.bi { background-image: url('image/bi.png') !important; }
+.de { background-image: url('image/de.png') !important; }
+.gp { background-image: url('image/gp.png') !important; }
+.kp { background-image: url('image/kp.png') !important; }
+.mu { background-image: url('image/mu.png') !important; }
+.py { background-image: url('image/py.png') !important; }
+.tj { background-image: url('image/tj.png') !important; }
+.zw { background-image: url('image/zw.png') !important; }
+.bj { background-image: url('image/bj.png') !important; }
+.dj { background-image: url('image/dj.png') !important; }
+.gq { background-image: url('image/gq.png') !important; }
+.kr { background-image: url('image/kr.png') !important; }
+.mv { background-image: url('image/mv.png') !important; }
+.qa { background-image: url('image/qa.png') !important; }
+.tk { background-image: url('image/tk.png') !important; }
+.zz { background-image: url('image/zz.png') !important; }
+.bm { background-image: url('image/bm.png') !important; }
+.dk { background-image: url('image/dk.png') !important; }
+.gr { background-image: url('image/gr.png') !important; }
+.kw { background-image: url('image/kw.png') !important; }
+.mw { background-image: url('image/mw.png') !important; }
+.re { background-image: url('image/re.png') !important; }
+.tl { background-image: url('image/tl.png') !important; }
+.bn { background-image: url('image/bn.png') !important; }
+.dm { background-image: url('image/dm.png') !important; }
+.gs { background-image: url('image/gs.png') !important; }
+.ky { background-image: url('image/ky.png') !important; }
+.mx { background-image: url('image/mx.png') !important; }
+.ro { background-image: url('image/ro.png') !important; }
+.tm { background-image: url('image/tm.png') !important; }
+.bo { background-image: url('image/bo.png') !important; }
+.do { background-image: url('image/do.png') !important; }
+.gt { background-image: url('image/gt.png') !important; }
+.kz { background-image: url('image/kz.png') !important; }
+.my { background-image: url('image/my.png') !important; }
+.rs { background-image: url('image/rs.png') !important; }
+.tn { background-image: url('image/tn.png') !important; }
+.br { background-image: url('image/br.png') !important; }
+.dz { background-image: url('image/dz.png') !important; }
+.gu { background-image: url('image/gu.png') !important; }
+.la { background-image: url('image/la.png') !important; }
+.mz { background-image: url('image/mz.png') !important; }
+.ru { background-image: url('image/ru.png') !important; }
+.to { background-image: url('image/to.png') !important; }
+.bs { background-image: url('image/bs.png') !important; }
+.ec { background-image: url('image/ec.png') !important; }
+.gw { background-image: url('image/gw.png') !important; }
+.lb { background-image: url('image/lb.png') !important; }
+.na { background-image: url('image/na.png') !important; }
+.rw { background-image: url('image/rw.png') !important; }
+.tr { background-image: url('image/tr.png') !important; }
+.bt { background-image: url('image/bt.png') !important; }
+.ee { background-image: url('image/ee.png') !important; }
+.gy { background-image: url('image/gy.png') !important; }
+.lc { background-image: url('image/lc.png') !important; }
+.nc { background-image: url('image/nc.png') !important; }
+.sa { background-image: url('image/sa.png') !important; }
+.tt { background-image: url('image/tt.png') !important; }
+.bv { background-image: url('image/bv.png') !important; }
+.eg { background-image: url('image/eg.png') !important; }
+.hk { background-image: url('image/hk.png') !important; }
+.li { background-image: url('image/li.png') !important; }
+.ne { background-image: url('image/ne.png') !important; }
+.sb { background-image: url('image/sb.png') !important; }
+.tv { background-image: url('image/tv.png') !important; }
