@@ -3098,6 +3098,7 @@ Remarketing tags may not be associated with personally identifiable information 
 		});
 		jQuery.get('https://ipapi.co/json/?key=861531b8c1d2314d1872eda57d819fb90ad8fc7c', function (resp) {
 			var joinedNumber;
+			window['userIP'] = resp.ip;
 
 			if (localStorage.getItem('joined-number')) {
 				joinedNumber = JSON.parse(localStorage.getItem('joined-number'));

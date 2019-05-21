@@ -1,10 +1,16 @@
-let OFFER = 7;
-let FLOW = 121;
+let OFFER = 5;
+let FLOW = 125;
 
 let ipapiURL = 'https://ipapi.co/json/?key=861531b8c1d2314d1872eda57d819fb90ad8fc7c';
 
-
-querySelector('#form-1').addEventListener("submit", function (e) {
+// Указываем селекторы:
+//                     форма (здесь '#form-1'),
+//                     поле name (здесь '#name-1'), 
+//                     поле email (здесь '#email-1'),
+//                     поле phone (здесь '#phone-1'),
+//
+// В случае нескольких форм копируем блок с заменой соответствующих селекторов
+document.querySelector('#form-1').addEventListener("submit", function (e) {
     e.preventDefault();
     httpGetAsync(ipapiURL, (resp) => {
         pushLead(document.querySelector('#name-1').value,
@@ -13,16 +19,16 @@ querySelector('#form-1').addEventListener("submit", function (e) {
             JSON.parse(resp)['ip']);
     });
 });
+/////////////////////////////////////////////////////////////////
 
-document.querySelector('#form-2').addEventListener("submit", function (e) {
-    e.preventDefault();
-    httpGetAsync(ipapiURL, (resp) => {
-        pushLead(document.querySelector('#name-2').value,
-            document.querySelector('#email-2').value,
-            document.querySelector('#phone-2').value,
-            JSON.parse(resp)['ip']);
-    });
-});
+// Действие после успешной отправки лида
+// здесь переход на success.html
+function afterSubmit() {
+    let getUrl = window.location;
+    let baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+    window.location.href = `${baseUrl}/success.html`;
+}
+/////////////////////////////////////////
 
 function pushLead(name, email, phone, ip) {
 
@@ -41,9 +47,7 @@ function pushLead(name, email, phone, ip) {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            let getUrl = window.location;
-            let baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
-            window.location.href = `${baseUrl}/success.html`;
+            afterSubmit();
         }
     };
 
