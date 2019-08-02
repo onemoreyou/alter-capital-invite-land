@@ -1,7 +1,7 @@
 let OFFER = 7;
-let FLOW = 121;
+let FLOW = 292;
 
-let ipapiURL = 'https://ipapi.co/json/?key=861531b8c1d2314d1872eda57d819fb90ad8fc7c';
+let ipapiURL = 'https://ipapi.co/json';
 
 
 querySelector('#form-1').addEventListener("submit", function (e) {

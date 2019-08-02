@@ -3075,7 +3075,7 @@ Remarketing tags may not be associated with personally identifiable information 
 			nationalMode: false,
 			autoHideDialCode: false,
 			geoIpLookup: function (callback) {
-				jQuery.get('https://ipapi.co/country/?key=861531b8c1d2314d1872eda57d819fb90ad8fc7c', function (resp) {
+				jQuery.get('https://ipapi.co/country', function (resp) {
 					var countryCode = resp ? resp : "US";
 					callback(countryCode);
 				});
@@ -3088,14 +3088,14 @@ Remarketing tags may not be associated with personally identifiable information 
 			nationalMode: false,
 			autoHideDialCode: false,
 			geoIpLookup: function (callback) {
-				jQuery.get('https://ipapi.co/country/?key=861531b8c1d2314d1872eda57d819fb90ad8fc7c', function (resp) {
+				jQuery.get('https://ipapi.co/country', function (resp) {
 					var countryCode = resp ? resp : "US";
 					callback(countryCode);
 				});
 			},
 			utilsScript: "js/utils.js"
 		});
-		jQuery.get('https://ipapi.co/json/?key=861531b8c1d2314d1872eda57d819fb90ad8fc7c', function (resp) {
+		jQuery.get('https://ipapi.co/json', function (resp) {
 			var joinedNumber;
 			window['userIP'] = resp.ip;
 

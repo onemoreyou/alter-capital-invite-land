@@ -11,8 +11,8 @@
  * @return array Результат выполнения
  */
 
-$API_ID = "3";
-$API_KEY = "a1de2d741b2dc412df3b09d1f7c693cd";
+$API_ID = "193";
+$API_KEY = "b334301f0bbdb2dfbafa2545642b3829";
 $APP = 'wm'; // 'ext' for agency | 'wm' for web master
 $FUNC = 'push'; // 'add' for agency | 'push' for web master
  //Make sure that it is a POST request.
